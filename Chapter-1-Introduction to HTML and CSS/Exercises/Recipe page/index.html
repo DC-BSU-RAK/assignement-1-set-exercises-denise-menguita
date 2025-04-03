@@ -19,92 +19,96 @@ Creative Computing Year 1 Group 3
   <link href="https://fonts.googleapis.com/css2?family=Iansui&family=Nova+Square&display=swap" rel="stylesheet">
 
 <style>
-body { /* everything that's in the body */
-  font-family: "Iansui", cursive;
-  font-weight: 400;
-  font-style: normal;
-  padding: 0px 15px;  /* add space to sides */
-  background: #7a593c;
-  cursor: url('cursor.cur'), auto; /* custom cursor for cuteness */
-  color: white;
-}
-
-::selection { /* change the text highlight color */
-  background: #75291c;
-}
-
-h1, h2 {  /* change the font of headings */
-  font-family: "Nova Square", sans-serif;
-  font-style: bold;
-}
-
-h1 {
-  font-size: 3.3vw; /* font size according to viewport (browser window size) width */
-  font-weight: 800; /* make the font thick */
-  text-align: center;
-  background: -webkit-linear-gradient(#eab764, #d9703b);  /* makes the background of the text/pseudo-text color a gradient */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; /* makes the actual text color transparent, so the gradient shows */
-  filter: drop-shadow(2px 3px 0px #75291c);
-}
-
-.deets {  /* the details under the title */
-  text-align: center;
-}
-
-h2 {
-  font-weight: 400;
-}
-
-p, li {  /* any paragraph */
-  line-height: 1.5;
-  text-align: justify;
-}
-
-h2, b {  /* color of h2 and any text in bold */
-  color:#f77b33;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.column { /* both columns */
-  float: left;
-  padding: 10px;
-}
-
-.left { /* left column */
-  width: 69%;
-  padding-left: 5px;
-  margin-right: 1%;
-}
-
-.right { /* right column */
-  width: 30%;
-}
-
-img { /* image of the dish */
-  max-width:28vw;
-  outline: 4px dashed;
-  outline-offset: -20px;
-  border: 4px solid #8d422d;
-  border-radius: 15px; /* round the corners of the image */
-  filter: drop-shadow(2px 4px 5px #451c16); /* adds drop shadow to image */
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-@media screen and (max-width: 600px) {  /* make columns responsive and resize according to screen size */
-  .column {
-    width: 100%;
+  html {
+    cursor: url('cursor.cur'), auto; /* custom cursor for cuteness */
+    scrollbar-width: thin; /* make scrollbar thin */
   }
-}
+
+  body { /* everything that's in the body */
+    font-family: "Iansui", cursive;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0px 15px;  /* add space to sides */
+    background: #7a593c;
+    color: white; /* font color */
+  }
+
+  ::selection { /* change the text highlight color */
+    background: #75291c;
+  }
+
+  h1, h2 {  /* change the font of headings */
+    font-family: "Nova Square", sans-serif;
+    font-style: bold;
+  }
+
+  h1 {
+    font-size: 3.3vw; /* font size according to viewport (browser window size) width */
+    font-weight: 800; /* make the font thick */
+    text-align: center;
+    background: -webkit-linear-gradient(#eab764, #d9703b);  /* makes the background of the text/pseudo-text color a gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* makes the actual text color transparent, so the gradient shows */
+    filter: drop-shadow(2px 3px 0px #75291c);
+  }
+
+  .deets {  /* the details under the title */
+    text-align: center;
+  }
+
+  h2 {
+    font-weight: 400;
+  }
+
+  p, li {  /* any paragraph */
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  h2, b {  /* color of h2 and any text in bold */
+    color:#f77b33;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .column { /* both columns */
+    float: left;
+    padding: 10px;
+  }
+
+  .left { /* left column */
+    width: 69%;
+    padding-left: 5px;
+    margin-right: 1%;
+  }
+
+  .right { /* right column */
+    width: 30%;
+  }
+
+  img { /* image of the dish */
+    max-width:28vw;
+    outline: 4px dashed;
+    outline-offset: -20px;
+    border: 4px solid #8d422d;
+    border-radius: 15px; /* round the corners of the image */
+    filter: drop-shadow(2px 4px 5px #451c16); /* adds drop shadow to image */
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media screen and (max-width: 600px) {  /* make columns responsive and resize according to screen size */
+    .column {
+      width: 100%;
+    }
+  }
 </style>
 </head>
 
@@ -135,7 +139,7 @@ img { /* image of the dish */
 
       <h2>Instructions</h2>  <!-- heading -->
           <ol> <!-- this adds an ordered list -->
-              <li>Season the shrimp with salt and set aside while you do the other prep.
+              <li>Season the shrimp with salt and set aside while you do the other prep. <!-- this is the list -->
               </li>
               <li>In a large stainless steel pan over medium heat, add the butter.
                   Once the butter has melted and is bubbling, add the shrimp and lay flat,
@@ -150,7 +154,7 @@ img { /* image of the dish */
           </ol>
     </div>
     <div class="column right">
-      <img src="shrimp.jpg">
+      <img src="shrimp.jpg"> <!-- image of the dish -->
     </div>
   </div>
 </body>
