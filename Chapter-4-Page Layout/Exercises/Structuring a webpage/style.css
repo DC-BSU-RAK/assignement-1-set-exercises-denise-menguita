@@ -33,34 +33,50 @@ a, h2 {
 }
 
 main {
-    padding: 2vw;  /* spacing inside the content*/
+    padding: 1vw 0;  /* spacing inside the content*/
     display: flex;
     justify-content: space-between;
+    font-size: 1.2vw; /* set the font size of <p> */
 }
 
 section {
     float: left;
     width: 58%;
+    padding-left: 2vw; /* space between the edge of the left side and the <section> */
 }
 
-section img {
+section img { /* set the size of the image */
     width: 100%;
+    height: 50%;
 }
 
 aside {
     width: 35%;
     padding: 1.5vw; /* inside spacing/space between the border of the sidebar and the content */
     background-color: #172d67;
-    color: #FFFFFF;
+    color: #FFFFFF; /* font color */
+}
+
+aside ul { /* style the unordered list */
+    list-style: none; /* no bullet before the text */
+    padding: 0;
+    font-size: 1.1vw;
+    margin-bottom: 1vw;
+}
+
+aside li {
+    margin-bottom: 1vw; /* add space between the lines */
 }
 
 aside img {
-    width: 49%;
+    margin-top: 1.3vw; /* add space between the list and the images */
+    width: 49%; /* set the size of the images */
+    height: 35%;
 }
 
 footer {
     position: relative;
-    padding: 5px;
+    padding: 0.5vw;
     background-color: #8c15e9;
     text-align: center;
     font-size: 1.1vw;
