@@ -1,9 +1,12 @@
+/*
+Denise Marielle Menguita
+Creative Computing Year 1 Group 3
+Chapter 4: Page Layout - Structuring a webpage
+*/
+
 body { 
-    margin-top: 0px;    /* prevent blank space around the edges */
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    font-family: Arial;
+    margin: 0px;    /* prevent blank space around the edges */
+    font-family: Arial; /* sets the font */
     font-weight: 400;   /* sets the thickness of the font */
 }
 
@@ -30,22 +33,36 @@ a, h2 {
 }
 
 main {
-    margin: 1.5vw;  /* outside spacing */
+    padding: 2vw;  /* spacing inside the content*/
+    display: flex;
+    justify-content: space-between;
 }
 
-section.img {
+section {
+    float: left;
+    width: 58%;
+}
+
+section img {
     width: 100%;
 }
 
 aside {
-    padding: 1vw 2vw; /* inside spacing/space between the border of the sidebar and the content */
+    width: 35%;
+    padding: 1.5vw; /* inside spacing/space between the border of the sidebar and the content */
     background-color: #172d67;
     color: #FFFFFF;
 }
 
+aside img {
+    width: 49%;
+}
+
 footer {
-    background-color: #8c15e9;
+    position: relative;
     padding: 5px;
+    background-color: #8c15e9;
     text-align: center;
+    font-size: 1.1vw;
     color: #FFFFFF;
 }
