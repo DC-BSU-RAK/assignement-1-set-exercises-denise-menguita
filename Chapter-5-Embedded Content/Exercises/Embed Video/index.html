@@ -1,0 +1,39 @@
+<!--
+Denise Marielle Menguita
+Creative Computing Year 1 Group 3
+Chapter 5: Embedded Content - Embed Video
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- name that appears on the tab -->
+    <title>Embed Video</title> 
+
+<style>
+    body {
+        background-color: #181818; /* make background color dark */
+    }
+
+    .vid {
+        display: flex;
+        /* vertical alignment */
+        justify-content: center;
+        align-items: center;
+        /* make the height full viewport to make it center horizontally */
+        height: 100vh; 
+    }
+</style>
+</head>
+
+<body>
+    <!-- use div class to center vid in style/CSS -->
+    <div class="vid">
+        <!-- embed video -->
+        <video width="960" height="540" controls loop poster="poster.png"><source src="video.mp4" type="video/mp4"></video> 
+        <!-- controls = play, volume, & fullscreen buttons; poster = thumbnail -->
+    </div>
+</body>
+</html>
