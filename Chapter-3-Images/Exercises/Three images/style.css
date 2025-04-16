@@ -21,3 +21,18 @@ img {
     filter: brightness(0.9) contrast(1.1); /* CSS filter for appearance */
     margin: 20px 0;
 }
+
+/* make 1st image gray */
+#one {
+    filter: grayscale(80%); 
+}
+
+/* make 2nd image blurry */
+#two {
+    filter: blur(10px);
+}
+
+/* invert colors of 3rd image */
+#three {
+    filter: invert(70%);
+}
