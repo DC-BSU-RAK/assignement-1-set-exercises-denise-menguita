@@ -30,10 +30,11 @@ nav {
         color: white;
         font-weight: bold;
     }
+}
 
-    .navbar a:hover {
-        background-color: #0056b3;
-    }
+/* underline link when hovering */
+a:hover {
+    text-decoration: underline;
 }
 
 .section {
